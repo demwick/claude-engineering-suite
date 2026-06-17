@@ -1,0 +1,33 @@
+{
+  "name": "claude-engineering-suite",
+  "owner": {
+    "name": "demwick"
+  },
+  "description": "Human-in-the-loop AI software engineering: the engine (software-engineer) and the acceptance-time brake (centaur-layer). Pair with claude-charter (installed separately) for the policy layer.",
+  "plugins": [
+    {
+      "name": "software-engineer",
+      "source": {
+        "source": "github",
+        "repo": "demwick/software-engineer"
+      },
+      "description": "The engine — one natural-language entry point that triages every request and runs the right depth of engineering: clarify, spec, ADR, risk, plan, implement, test, senior review. Defers to claude-charter and centaur-layer when present.",
+      "version": "4.2.0",
+      "repository": "https://github.com/demwick/software-engineer",
+      "license": "AGPL-3.0-or-later",
+      "category": "Coding"
+    },
+    {
+      "name": "centaur-layer",
+      "source": {
+        "source": "github",
+        "repo": "demwick/centaur-layer"
+      },
+      "description": "The brake — pre-commit diff-risk scoring (low/med/high) plus a human comprehension check, so AI can accelerate coding without weakening the developer's reasoning. Questions the human, not the machine.",
+      "version": "0.2.0",
+      "repository": "https://github.com/demwick/centaur-layer",
+      "license": "MIT",
+      "category": "Coding"
+    }
+  ]
+}
