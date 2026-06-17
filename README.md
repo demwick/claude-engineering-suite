@@ -69,7 +69,7 @@ configuration. That handoff is specified in the contract's
 
 ## Versions
 
-This suite pins a **known-good baseline**: `software-engineer` 4.2.0 ·
+This suite pins a **known-good baseline**: `software-engineer` 4.3.0 ·
 `claude-charter` v0.1.3 · `centaur-layer` 0.2.0. To ship a newer compatible
 triple, bump the versions in [`marketplace.json`](./.claude-plugin/marketplace.json)
 and the matrix in the contract together — they must move as one.

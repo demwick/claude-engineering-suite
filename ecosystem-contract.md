@@ -16,7 +16,7 @@ duplicating them.
 This file is the **one canonical definition** of those seams. If a project's
 own docs disagree with this file, this file wins — fix the project's docs.
 
-> **Versions described here:** `software-engineer` 4.2.0 · `claude-charter`
+> **Versions described here:** `software-engineer` 4.3.0 · `claude-charter`
 > v0.1.3 · `centaur-layer` 0.2.0. See the [compatibility matrix](#version-compatibility)
 > for the tested combinations.
 
@@ -99,7 +99,8 @@ the no-collision invariants hold for that triple.
 
 | software-engineer | claude-charter | centaur-layer | Status | Notes |
 | --- | --- | --- | --- | --- |
-| 4.2.0 | v0.1.3 | 0.2.0 | ✅ current baseline | all three probe-detect each other; seams verified by each project's own docs |
+| 4.3.0 | v0.1.3 | 0.2.0 | ✅ current baseline | all three probe-detect each other; seams verified by each project's own docs |
+| 4.2.0 | v0.1.3 | 0.2.0 | ✅ compatible | 4.3.0 added gate taxonomy + must-haves — internal, no seam change |
 | 4.x | v0.1.x | 0.2.x | ✅ expected | same Detect & Defer contract; minor bumps are additive |
 | ≤ 3.x | — | — | ⚠️ pre-triage | engine ≤ 3.x used `/se-init`,`/se-go`,`/se-quick`; charter's engine-deferral assumes the v4 triage surface |
 
